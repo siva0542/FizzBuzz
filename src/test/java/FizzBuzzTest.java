@@ -67,4 +67,20 @@ public class FizzBuzzTest {
         String expectedResult="Buzz";
         assertEquals(actualResult,expectedResult);
     }
+
+    @Test
+    public void toCheckMinusFiftyTwoIsABuzzOrNot(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(-52);
+        String actualResult=obj.fizzBuzz();
+        String expectedResult="null";
+        assertEquals(actualResult,expectedResult);
+    }
+
+    @Test
+    public void toCheckOneFiftyTwoIsABuzzOrNot(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(152);
+        String actualResult=obj.fizzBuzz();
+        String expectedResult="null";
+        assertEquals(actualResult,expectedResult);
+    }
 }
