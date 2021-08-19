@@ -43,4 +43,28 @@ public class FizzBuzzTest {
         String expectedResult="null";
         assertEquals(actualResult,expectedResult);
     }
+
+    @Test
+    public void toCheckFifteenIsAFizzBuzz(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(15);
+        String actualResult=obj.fizzBuzz();
+        String expectedResult="FizzBuzz";
+        assertEquals(actualResult,expectedResult);
+    }
+
+    @Test
+    public void toCheckThirteenIsAFizzBecauseItIsHavingThree(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(13);
+        String actualResult=obj.fizzBuzz();
+        String expectedResult="Fizz";
+        assertEquals(actualResult,expectedResult);
+    }
+
+    @Test
+    public void toCheckFiftyTwoIsABuzzBecauseItIsHavingFive(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(52);
+        String actualResult=obj.fizzBuzz();
+        String expectedResult="Buzz";
+        assertEquals(actualResult,expectedResult);
+    }
 }
