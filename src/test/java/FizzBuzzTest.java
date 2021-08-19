@@ -21,8 +21,24 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void toCheckNineteenIsNotAFizzAndBuzz(){
+    public void toCheckNineteenIsNotAFizzOrBuzz(){
         FizzBuzzTestDemo obj=new FizzBuzzTestDemo(19);
+        String actualResult=obj.fizzOrBuzz();
+        String expectedResult="null";
+        assertEquals(actualResult,expectedResult);
+    }
+
+    @Test
+    public void toCheckMinusNineIsNotAFizzOrBuzz(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(-9);
+        String actualResult=obj.fizzOrBuzz();
+        String expectedResult="null";
+        assertEquals(actualResult,expectedResult);
+    }
+
+    @Test
+    public void toCheckOneFifteenIsNotAFizzOrBuzz(){
+        FizzBuzzTestDemo obj=new FizzBuzzTestDemo(115);
         String actualResult=obj.fizzOrBuzz();
         String expectedResult="null";
         assertEquals(actualResult,expectedResult);
